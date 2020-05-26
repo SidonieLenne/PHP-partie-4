@@ -1,14 +1,3 @@
-<?php 
-//Initialise la fonction impair() qui retourne true à chaque nombre impair
-function impair($i){
-    if($i % 2 != 0){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
@@ -17,14 +6,14 @@ function impair($i){
 </head>
 <body>
 <p><?php
-//Boucle qui se répète de 0 à 300 et qui affiche le nombre quand la fonction impair() retourne true
+//Boucle qui se répète de 0 à 300 et qui affiche le nombre quand le reste de ce nombre divisé par 2 est différent de 0
 for($i= 0; $i <= 300; $i++)
 {
-    if(impair($i) == true)
+    if($i % 2 != 0)
     {
         echo $i . ', ';
     }
 }
-?>.</p>
+?></p>
 </body>
 </html>
